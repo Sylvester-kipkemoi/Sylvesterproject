@@ -89,7 +89,7 @@
                         <div class="dropdown-content">
                           <a href="login.php">As Patient</a>
                           <a href="login2.php">As Doctor</a>
-                          <a href="admin.php">Admin</a>
+                          <a href="admin2.php">Admin</a>
 
                         </div>
                       </div>

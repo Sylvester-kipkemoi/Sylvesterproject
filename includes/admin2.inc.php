@@ -35,7 +35,7 @@ session_start();
 			 			$_SESSION['admname'] = $row['admname'];
 			 			$_SESSION['regno'] = $row['regno'];
 			 			$_SESSION['email'] = $row['email'];
-						header("Location: ../addns/admin/index.html?adminsignin=success");
+						header("Location: ../addns/admin/index-a.php?adminsignin=success");
 			 	exit();
 			 		}
 			 	}

@@ -46,7 +46,7 @@
 						//Insert the user into the database
 						$sql = "INSERT INTO `registerpatient`(`id`, `Firstname`, `Middlename`, `Surname`, `RegNo`, `Contact`, `Email`, `Kin`, `kincon`, `kinemail`, `pwd`) VALUES (null, '$Firstname', '$Middlename', '$Surname', '$RegNo', '$Contact', '$Email', '$Kin', '$kincon', '$kinemail', '$hashedPwd');";
 						mysqli_query($conn, $sql);
-						header("Location: ../addns/patients/index.html?patient-signup=success");
+						header("Location: ../addns/patients/index-p.php?patient-signup=success");
 						exit();
 
 

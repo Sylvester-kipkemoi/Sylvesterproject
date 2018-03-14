@@ -40,7 +40,7 @@
 						//Insert the user into the database
 						$sql = "INSERT INTO `registerdoctor`(`id`, `docname`, `regno`, `email`, `contact`, `pwd`) VALUES (null, '$docname', '$regno', '$email', '$contact', '$hashedPwd') ";
 						mysqli_query($conn, $sql);
-						header("Location: ../addns/docs/index.html?doctorsignup=success");
+						header("Location: ../addns/docs/index-d.php?doctorsignup=success");
 						exit();
 
 

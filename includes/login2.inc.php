@@ -35,7 +35,7 @@ session_start();
 			 			$_SESSION['docname'] = $row['docname'];
 			 			$_SESSION['regno'] = $row['regno'];
 			 			$_SESSION['email'] = $row['email'];
-						header("Location: ../addns/docs/index.html?doctorsignin=success");
+						header("Location: ../addns/docs/index-d.php?doctorsignin=success");
 			 	exit();
 			 		}
 			 	}

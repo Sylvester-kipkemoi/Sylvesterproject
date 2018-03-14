@@ -14,8 +14,12 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Bootstrap Core CSS RTL-->
+    <link href="css/bootstrap-rtl.min.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link href="css/sb-admin.css" rel="stylesheet">
+    <link href="css/sb-admin-rtl.css" rel="stylesheet">
 
     <!-- Morris Charts CSS -->
     <link href="css/plugins/morris.css" rel="stylesheet">
@@ -45,9 +49,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-            
                 </button>
-                <a class="navbar-brand" href="index.html">SB Admin</a>
+                <a class="navbar-brand" href="index.php">SB Admin</a>
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
@@ -153,8 +156,8 @@
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
-                    <li class="active">
-                        <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                    <li>
+                        <a href="index.php"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                     </li>
                     <li>
                         <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a>
@@ -183,15 +186,29 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
+                        <a href="blank-page.php"><i class="fa fa-fw fa-file"></i> Blank Page</a>
                     </li>
-                    <li>
-                        <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
+                    <li class="active">
+                        <a href="index-rtl.php"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
                     </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </nav>
+        <?php
+            if (isset($_SESSION['regno'])) {
+              echo '<form action="includes/logout.inc.php" method="POST">
+            <button type="submit" name="SUBMIT">LogOut</button>
+            
+           </form>';
+            } else{
+              echo 'header("Location: ../admin2.php?adminlogin=error");
+        exit(); ';
+
+            } 
+
+         ?>
+    
 
         <div id="page-wrapper">
 

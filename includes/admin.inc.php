@@ -40,7 +40,7 @@
 						//Insert the user into the database
 						$sql = "INSERT INTO `admin`(`id`, `admname`, `regno`, `email`, `contact`, `pwd`) VALUES (null, '$admname', '$regno', '$email', '$contact', '$hashedPwd') ";
 						mysqli_query($conn, $sql);
-						header("Location: ../addns/admin/index.html?adminsignup=success");
+						header("Location: ../addns/admin/index-a.php?adminsignup=success");
 						exit();
 
 

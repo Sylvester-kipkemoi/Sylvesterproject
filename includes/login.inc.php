@@ -36,7 +36,7 @@ session_start();
 			 			$_SESSION['Middlename'] = $row['Middlename'];
 			 			$_SESSION['Surname'] = $row['Surname'];
 			 			$_SESSION['RegNo'] = $row['RegNo'];
-						header("Location: ../addns/patients/index.html?patient-signin=success");
+						header("Location: ../addns/patients/index-p.php?patient-signin=success");
 			 	exit();
 			 		}
 			 	}
